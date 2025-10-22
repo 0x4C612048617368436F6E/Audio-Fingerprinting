@@ -8,3 +8,4 @@ Learning all about audio fingerprinting by reimplementing it
 2. Java - FrontEnd (Android Application)
 3. React - If i am successful with the frontend, might implement web based version
 4. JavaScript (Node.JS and Express.JS) - For backend processing
+5. postgreSQL - For database
