@@ -3,4 +3,5 @@ class to facilitate database connection
 '''
 
 class database:
-    pass
+    def __init__(self):
+        pass

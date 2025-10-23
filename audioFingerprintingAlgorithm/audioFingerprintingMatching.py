@@ -3,4 +3,5 @@ class to facilitate audio finger printing matches
 '''
 
 class audioFingerPrintingMatching:
-    pass
+    def __init__(self):
+        pass

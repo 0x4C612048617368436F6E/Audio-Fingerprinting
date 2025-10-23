@@ -2,4 +2,5 @@
 class to facilitate audio fingerprinting
 '''
 class audioFingerPrintingAlgorithm:
-    pass
+    def __init__(self):
+        pass
