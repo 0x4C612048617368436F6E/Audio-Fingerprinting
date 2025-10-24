@@ -3,11 +3,11 @@ our main driver
 '''
 import sys
 import librosa
+import audioPreprocess
 
 def main():
     #get an example multi-media file
-    exampleFile = librosa.ex("nutcracker")
-    print(exampleFile)
+    audioPreprocess.audioPreprocess.extractMetadata()
     sys.exit(0)
 
 if __name__ == "__main__":
