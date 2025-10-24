@@ -1,86 +1,58 @@
 {
   "track0": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
+    "title": "Awware",
+    "artist": "Double-F the King",
+    "genre": "Soul-RnB",
+    "release-date": "May 02, 2022",
+    "description": "A passionate, melodious song that creates awareness for love and togetherness.",
+    "albulm": "Aware",
+    "instrumental": "No",
+    "explicit": "Radio-Safe",
+    "ai-generated": "No"
   },
   "track1": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
+    "title": "Be My Girl",
+    "artist": "Double-F the King",
+    "genre": "Soul-RnB",
+    "release-date": "May 14, 2022",
+    "description": "A romantic R&B about with a deep male vocalist.",
+    "albulm": "Heartstrings",
+    "instrumental": "No",
+    "ai-generated": "No"
   },
   "track2": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
+    "title": "Tribes Gathering",
+    "artist": "Cooper-Moore & Assif Tsahar",
+    "genre": ["Blues"],
+    "release-date": "Sep 30, 2011",
+    "albulm": "tells untold",
+    "instrumental": "No",
+    "ai-generated": "No"
   },
   "track3": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
+    "title": "No Home",
+    "artist": "Cullah",
+    "genre": ["Blues"],
+    "release-date": "May 01, 2015",
+    "albulm": "Cullah The Wild",
+    "instrumental": "Yes",
+    "ai-generated": "No"
   },
   "track4": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
+    "title": "The Power of Flight",
+    "artist": "Cullah",
+    "genre": ["Hip-Hop"],
+    "release-date": "May 01, 2015",
+    "albulm": "E-MC Cullah",
+    "instrumental": "No",
+    "ai-generated": "No"
   },
   "track5": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
-  },
-  "track6": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
-  },
-  "track7": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
-  },
-  "track8": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
-  },
-  "track9": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
-  },
-  "track10": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
-  },
-  "track11": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
-  },
-  "track12": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
-  },
-  "track13": {
-    "title": "How to Write an 80s Sitcom",
-    "artist": "Dr Sparkles",
-    "genre": "Folk",
-    "date": "2016"
+    "title": "Soul Hip Hop",
+    "artist": "Cullah",
+    "genre": ["Hip-Hop"],
+    "release-date": "May 01, 2015",
+    "instrumental": "No",
+    "ai-generated": "No"
   }
 }
