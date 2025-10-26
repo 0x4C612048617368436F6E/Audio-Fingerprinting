@@ -7,6 +7,7 @@ import subprocess
 import json
 import os
 from pathlib import Path
+import librosa
 
 #reason for using os and Path is os does not support creating parent directory
 
@@ -21,6 +22,9 @@ class audioPreprocess:
         '-show_streams'
     ]
     metaData = []
+    #make global
+    sr = 0
+    y = []
     def __init__(self):
         pass
 
@@ -67,5 +71,29 @@ class audioPreprocess:
                     print("Metadata of file {0} added to json file {1}".format(os.path.join(audioPreprocess.audioMetadataPath[0],audioPreprocess.audioMetadataPath[1],files[i]),os.path.join(audioPreprocess.audioMetadataPath[0],audioPreprocess.audioMetadataPath[1],audioPreprocess.audioMetadataPath[2],audioPreprocess.jsonPath)))
                 jsonFile.write(json.dumps(audioPreprocess.metaData,indent=4))
                 #some got no tags
+    
+    @classmethod
+    def audioAnalysis(cls,**kwags):
+        '''
+        Be learning and extracting different types of features
+        '''
+
+        #first lets try load out audio and see if work
+        y, sr = librosa.load(kwags["file"])
+        print("Amplitude of audio {0}".format(kwags["file"]),y)
+        print("Sample Rate of audio {0}".format(kwags["file"]),sr)
+
+        #lets examine some basic audio properties
+        duration = librosa.get_duration(y=y,sr=sr)
+        print("Audio duration: {0}".format(duration))
+        print("Sample rate: {0} Hz".format(sr))
+        #remember sr = sample rate
+        #y is the actual amplititude
+        print("Number of samples taken: {0}".format(len(y)))
+        print("Shape of audio array: {0}".format(y.shape))
+
+        #mono -> 1 channel -> 1D
+        #Stero -> 2 channel -> 2D
+
             
 
