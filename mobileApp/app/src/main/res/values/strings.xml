@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Audio Fingerprinting</string>
+    <string name="tap">Tap to Shazam</string>
 </resources>
