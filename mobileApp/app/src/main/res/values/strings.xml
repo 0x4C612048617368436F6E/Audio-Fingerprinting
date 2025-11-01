@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Audio Fingerprinting</string>
-    <string name="tap">Tap to Shazam</string>
+    <string name="tap_to_shazam">Tap to Shazam</string>
+    <string name="add_to_database">Add Song to Database</string>
 </resources>

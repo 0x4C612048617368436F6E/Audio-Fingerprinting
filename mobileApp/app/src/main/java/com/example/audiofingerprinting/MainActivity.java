@@ -1,5 +1,6 @@
 package com.example.audiofingerprinting;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,9 +25,21 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        //get out button
+        Button tapToShazam = (Button) findViewById(R.id.buttonTapToShazam);
+        Button addToDatabase = (Button) findViewById(R.id.addToDatabase);
 
-        TextView getTextView = (TextView) findViewById(R.id.textview1);
-        getTextView.setText(R.string.tap);
+        tapToShazam.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                //do some stuff
+            }
+        });
+
+        addToDatabase.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                //do some stuff
+            }
+        });
     }
 }

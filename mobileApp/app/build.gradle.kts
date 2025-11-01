@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-
+    api("com.google.android.material:material:1.1.0-alpha06")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -40,4 +40,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }

@@ -3,10 +3,42 @@
     android:id="@+id/main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    >
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/textview1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:text="@string/tap_to_shazam"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp" />
 
-    <TextView
-        android:id="@+id/textview1"
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTapToShazam"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:background="@drawable/circle"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addToDatabase"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_database"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+
 </LinearLayout>
