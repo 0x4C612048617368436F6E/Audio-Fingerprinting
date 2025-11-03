@@ -6,11 +6,25 @@
     android:background="@drawable/bg_gradient"
     android:orientation="vertical"
     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:id="@+id/navigation_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
 <com.google.android.material.textview.MaterialTextView
     android:id="@+id/textview1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="25sp"
+    android:textSize="35sp"
     android:text="@string/tap_to_shazam"
     android:textColor="@color/white"
     android:textStyle="bold"
@@ -18,23 +32,40 @@
     android:layout_marginTop="50dp"
     android:layout_marginBottom="50dp" />
 
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonTapToShazam"
-        android:layout_width="256dp"
-        android:layout_height="256dp"
-        android:background="@drawable/circle"
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="150dp">
 
-        />
+        <!-- Circular Button (drawn first = behind) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonTapToShazam"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:background="@drawable/circle"
+            android:layout_centerInParent="true" />
+
+        <!-- Icon (declared after = drawn on top) -->
+        <ImageView
+            android:id="@+id/buttonIcon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/icons"
+            android:elevation="10dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/tap_to_shazam" />
+
+    </RelativeLayout>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/addToDatabase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_to_database"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_gravity="center"

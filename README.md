@@ -1,15 +1,16 @@
 # Audio fingerprinting
 
-Learning all about audio fingerprinting by reimplementing it
+Learning all about audio fingerprinting by reimplementing it, but not trying to compete
 
-# Langiage stack
+# Language stack
 
 1. Python - Actual CPU intensive fingerprinting logic (Using librosa for audio analysis and signal processing)
 2. Java - FrontEnd (Android Application)
-3. React - If i am successful with the frontend, might implement web based version
+3. React - If I am successful with the frontend, might implement web based version
 4. JavaScript (Node.JS and Express.JS) - For backend processing
 5. postgreSQL - For database
-6. Spofify API - Retrieve information once match is detected
+6. Spotify API - Retrieve information once match is detected
+7. Youtube
 
 # IMPORTANT
 
@@ -49,3 +50,7 @@ Two important representation of signals we will focus on here are time domain an
 ### some testing stuff
 
 ### Conclusion
+
+# Some stuff
+
+https://medium.com/@NVSoftware/record-replay-and-visualize-raw-audio-data-in-android-93ad10262dd3
