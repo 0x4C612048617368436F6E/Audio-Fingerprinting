@@ -1,24 +1,22 @@
-# Tell Linguist what languages to treat files as
+# Java code (Android app)
+mobileApp/app/src/**/*.java linguist-language=Java
 
-# Java code
-* linguist-language=Java
+# XML (Android layouts, drawables, manifests)
+mobileApp/res/**/*.xml linguist-language=XML
+mobileApp/app/src/**/*.xml linguist-language=XML
 
-# XML (Android layouts, drawables, etc.)
-* linguist-language=XML
-* linguist-language=XML
-
-# Python code
-* linguist-language=Python
-* linguist-language=Python
+# Python code (audio fingerprinting)
+audioFingerprintingAlgorithm/**/*.py linguist-language=Python
+audioFingerprintingAlgorithm/tests/**/*.py linguist-language=Python
 
 # Shell scripts
-* linguist-language=Shell
+scripts/**/*.sh linguist-language=Shell
 
-# JSON data
-* linguist-language=JSON
+# JSON data files
+audio/metadata/**/*.json linguist-language=JSON
 
-# Treat Jupyter notebooks as Python
+# Jupyter notebooks — treat as Python
 *.ipynb linguist-language=Python
 
+# Enable detection for all files
 *.* linguist-detectable=true
-
