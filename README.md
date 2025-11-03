@@ -7,10 +7,11 @@ Learning all about audio fingerprinting by reimplementing it, but not trying to 
 1. Python - Actual CPU intensive fingerprinting logic (Using librosa for audio analysis and signal processing)
 2. Java - FrontEnd (Android Application)
 3. React - If I am successful with the frontend, might implement web based version
-4. JavaScript (Node.JS and Express.JS) - For backend processing
+4. JavaScript (Node.JS and Express.JS) - For backend processing.
+   Use Websocket to exchange continuous data between client and server
 5. postgreSQL - For database
 6. Spotify API - Retrieve information once match is detected
-7. Youtube
+7. Youtube - Might use to retrive unique Youtbe ID
 
 # IMPORTANT
 
