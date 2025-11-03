@@ -1,2 +1,6 @@
-* linguist-vendored
-*.js linguist-vendored=false
+*.java linguist-detectable=true
+*.js linguist-detectable=true
+*.html linguist-detectable=true
+*.xml linguist-detectable=true
+*.python linguist=true
+*.sh linguist=true
