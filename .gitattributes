@@ -1,7 +1,10 @@
-*.java linguist-detectable=true
-*.js linguist-detectable=true
-*.html linguist-detectable=true
-*.xml linguist-detectable=true
-*.python linguist=true
-*.sh linguist=true
-*.ipynb linguist=true
+mobileApp/app/src/**/*.java linguist-language=true
+*.js linguist-language=true
+*.html linguist-language=true
+mobileApp/res/**/*.xml linguist-language=true
+audioFingerprintingAlgorithm/*.py linguist-language=true
+audioFingerprintingAlgorithm/tests/*.py linguist-language=true
+scripts/*.sh linguist-language=true
+audioFingerprintingAlgorithm/*.ipynb linguist-language=true
+audio/metadata/*.json linguist-language=true
+
