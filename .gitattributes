@@ -4,3 +4,4 @@
 *.xml linguist-detectable=true
 *.python linguist=true
 *.sh linguist=true
+*.ipynb linguist=true
