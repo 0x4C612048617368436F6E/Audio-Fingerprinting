@@ -1,10 +1,23 @@
-mobileApp/app/src/**/*.java linguist-language=true
-*.js linguist-language=true
-*.html linguist-language=true
-mobileApp/res/**/*.xml linguist-language=true
-audioFingerprintingAlgorithm/*.py linguist-language=true
-audioFingerprintingAlgorithm/tests/*.py linguist-language=true
-scripts/*.sh linguist-language=true
-audioFingerprintingAlgorithm/*.ipynb linguist-language=true
-audio/metadata/*.json linguist-language=true
+# Tell Linguist what languages to treat files as
+
+# Java code
+mobileApp/app/src/**/*.java linguist-language=Java
+
+# XML (Android layouts, drawables, etc.)
+mobileApp/app/src/**/*.xml linguist-language=XML
+mobileApp/res/**/*.xml linguist-language=XML
+
+# Python code
+audioFingerprintingAlgorithm/**/*.py linguist-language=Python
+audioFingerprintingAlgorithm/tests/**/*.py linguist-language=Python
+
+# Shell scripts
+scripts/**/*.sh linguist-language=Shell
+
+# JSON data
+audio/metadata/**/*.json linguist-language=JSON
+
+# Treat Jupyter notebooks as Python
+*.ipynb linguist-language=Python
+
 
