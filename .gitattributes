@@ -1,6 +1,6 @@
 # Java code (Android app)
 mobileApp/app/src/**/*.java linguist-language=Java
-
+/mobileApp/app/src/androidTest/java/com/example/audiofingerprinting*.java linguist-language=Java
 # XML (Android layouts, drawables, manifests)
 mobileApp/res/**/*.xml linguist-language=XML
 mobileApp/app/src/**/*.xml linguist-language=XML
