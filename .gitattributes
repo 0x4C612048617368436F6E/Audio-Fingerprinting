@@ -20,4 +20,5 @@
 # Treat Jupyter notebooks as Python
 *.ipynb linguist-language=Python
 
+*.* linguist-detectable=true
 
