@@ -1,10 +1,13 @@
 package com.example.audiofingerprinting;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -38,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
         }
         @NonNull  Button tapToShazam = (Button) findViewById(R.id.buttonTapToShazam);
         @NonNull Button addToDatabase = (Button) findViewById(R.id.addToDatabase);
-
-
+        @NonNull ImageView tapToShazamImageIcon = (ImageView) findViewById(R.id.buttonIcon);
         tapToShazam.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 //do some stuff
-                Log.d("Test","Tap to shazam");
+                Log.d("Debug","Switch to TapToShaza,ButtonPressed Activity");
+                switchToTapToShazamButtonPressedActivity();
             }
         });
 
@@ -57,5 +60,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        createAnimation(tapToShazam,R.anim.scale);
+        createAnimation(tapToShazamImageIcon,R.anim.scale);
+
+    }
+
+    public void createAnimation(@NonNull View view, @NonNull int animResource){
+        Animation animation = (Animation) AnimationUtils.loadAnimation(MainActivity.this,animResource);
+        view.startAnimation(animation);
+    }
+
+    public void switchToTapToShazamButtonPressedActivity(){
+        Intent switchActivity = (Intent) new Intent(MainActivity.this, TapToShazamButtonPressed.class);
+        startActivity(switchActivity);
     }
 }
+

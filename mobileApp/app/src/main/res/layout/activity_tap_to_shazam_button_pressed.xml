@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TapToShazamButtonPressed">
+    tools:context=".TapToShazamButtonPressed"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_exit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="110dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+        <!-- Circular Button (drawn first = behind) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonTapToShazam"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:background="@drawable/circle"
+            android:layout_centerInParent="true" />
+
+        <!-- Pulse animation -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pulseAnimation"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:background="@drawable/circle"
+            android:layout_centerInParent="true" />
+
+        <!-- Icon (declared after = drawn on top) -->
+        <ImageView
+            android:id="@+id/buttonIcon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/icons"
+            android:elevation="10dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/tap_to_shazam" />
+
+    </RelativeLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/listening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

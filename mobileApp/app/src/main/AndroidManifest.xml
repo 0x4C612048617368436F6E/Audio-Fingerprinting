@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AudioFingerprinting"
         tools:targetApi="31">
         <activity
+            android:name=".TapToShazamButtonPressed"
+            android:exported="false" />
+        <activity
+            android:name=".AddToDatabase"
+            android:exported="false" />
+        <activity
             android:name=".Concert"
             android:exported="false" />
         <activity
