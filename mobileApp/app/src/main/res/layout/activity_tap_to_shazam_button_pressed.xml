@@ -44,6 +44,13 @@
             android:background="@drawable/circle"
             android:layout_centerInParent="true" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pulseAnimation2"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:background="@drawable/circle"
+            android:layout_centerInParent="true" />
+
         <!-- Icon (declared after = drawn on top) -->
         <ImageView
             android:id="@+id/buttonIcon"
@@ -55,14 +62,31 @@
             android:contentDescription="@string/tap_to_shazam" />
 
     </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/listening"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/listenting"
         android:textSize="35sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dotProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
 
 </LinearLayout>
