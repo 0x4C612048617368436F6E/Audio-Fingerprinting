@@ -1,9 +1,5 @@
 package com.example.audiofingerprinting;
 
-import android.media.AudioFormat;
-import android.media.AudioRecord;
-import android.media.AudioTrack;
-import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -23,6 +19,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import org.w3c.dom.Text;
 
+import java.io.File;
+
 public class TapToShazamButtonPressed extends AppCompatActivity {
 
     private boolean isRunning = true;
@@ -33,7 +31,8 @@ public class TapToShazamButtonPressed extends AppCompatActivity {
     @NonNull TextView dotProgress;
     @NonNull Button pulseAnimation;
     @NonNull Button pulseAnimation2;
-    final int SAMPLERATE = 44100;
+
+    AudioRecorder recorder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +49,11 @@ public class TapToShazamButtonPressed extends AppCompatActivity {
         dotProgress = (TextView) findViewById(R.id.dotProgress);
         //larger Animation
         pulseAnimation2 = (Button) findViewById(R.id.pulseAnimation2);
+        //create class for audioRecording
+        Log.e("Test","Creating new instance");
+        File wavFile = new File(getExternalFilesDir(null), "test_audio.wav");
+        recorder = (AudioRecorder) new AudioRecorder(this);
+        recorder.start();
         exit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -87,20 +91,9 @@ public class TapToShazamButtonPressed extends AppCompatActivity {
         },500);
     }
 
-    //working with PCM
-//    public void PCM(){
-//        int bufferSize = AudioTrack.getMinBufferSize(SAMPLERATE, AudioFormat.CHANNEL_OUT_MONO,AudioFormat.ENCODING_PCM_16BIT);
-//        //create AudioRecord object, also check if permission available
-//        AudioRecord record = (AudioRecord) new AudioRecord(MediaRecorder.AudioSource.DEFAULT,SAMPLERATE,AudioFormat.CHANNEL_OUT_MONO,AudioFormat.ENCODING_PCM_16BIT,bufferSize);
-//
-//        //check if things didn't work as expected
-//        if(bufferSize == AudioTrack.ERROR || bufferSize == AudioTrack.ERROR_BAD_VALUE){
-//
-//        }
-//    }
-
     @Override
     public void onDestroy(){
         super.onDestroy();
+        recorder.stopRecording();
     }
 }

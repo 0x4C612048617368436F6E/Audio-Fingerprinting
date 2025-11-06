@@ -16,12 +16,12 @@
         android:src="@drawable/icon_exit"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginBottom="80dp"
         />
 
     <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="500dp"
+        android:layout_height="550dp"
         android:layout_gravity="center"
         android:clipChildren="false"
         android:clipToPadding="false"
