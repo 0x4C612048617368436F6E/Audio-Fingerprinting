@@ -54,4 +54,7 @@ Two important representation of signals we will focus on here are time domain an
 
 # Some stuff
 
+# How to work with raw audio in Java
+
 https://medium.com/@NVSoftware/record-replay-and-visualize-raw-audio-data-in-android-93ad10262dd3
+Icons - https://icons8.com/icons/set/exit--os-android--static--white
