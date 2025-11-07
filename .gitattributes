@@ -15,6 +15,10 @@ scripts/**/*.sh linguist-language=Shell
 # JSON data files
 audio/metadata/**/*.json linguist-language=JSON
 
+javaScriptBackend/**/*.json linguist-language=JSON
+
+javaScriptBackend/**/*.js linguist-language=JavaScript
+
 # Jupyter notebooks — treat as Python
 *.ipynb linguist-language=Python
 
