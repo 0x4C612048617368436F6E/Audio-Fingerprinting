@@ -5,11 +5,14 @@ import android.content.pm.PackageManager;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
+import android.os.Environment;
 import android.os.Process;
 import android.util.Log;
 
 import androidx.core.content.ContextCompat;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.Arrays;
 
 public class AudioRecorder extends Thread {
@@ -23,12 +26,14 @@ public class AudioRecorder extends Thread {
     private boolean recording = true;
     private short[] audioBuffer;
     private long shortRead = 0;
+    File pcmFile;
 
     public AudioRecorder(TapToShazamButtonPressed instance) {
         this.instance = instance;
         if (this.instance == null) {
             Log.e(TAG, "Instance is null");
         }
+        File pcmFile = new File(instance.getFilesDir(), "recording.pcm");
     }
 
     @Override
@@ -74,12 +79,12 @@ public class AudioRecorder extends Thread {
 
         record.startRecording();
         Log.d(TAG, "Recording started");
-
         try {
             while (recording) {
                 int numberOfShorts = record.read(audioBuffer, 0, audioBuffer.length);
                     //
                 shortRead+=numberOfShorts;
+                //send of to server using another thread
 
             }
         } catch (Exception e) {
@@ -95,15 +100,5 @@ public class AudioRecorder extends Thread {
 
     public void stopRecording() {
         recording = false;
-    }
-
-    // Optional utility if you need bytes for network transmission
-    private static byte[] shortToByteArray(short[] data, int elements) {
-        byte[] byteArray = new byte[elements * 2];
-        for (int i = 0; i < elements; i++) {
-            byteArray[i * 2] = (byte) (data[i] & 0xFF);
-            byteArray[i * 2 + 1] = (byte) ((data[i] >> 8) & 0xFF);
-        }
-        return byteArray;
     }
 }
