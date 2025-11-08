@@ -19,6 +19,11 @@ javaScriptBackend/**/*.json linguist-language=JSON
 
 javaScriptBackend/**/*.js linguist-language=JavaScript
 
+*.js linguist-language=JavaScript
+*.mjs linguist-language=JavaScript
+*.cjs linguist-language=JavaScript
+
+
 # Jupyter notebooks — treat as Python
 *.ipynb linguist-language=Python
 
