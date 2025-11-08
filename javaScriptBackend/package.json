@@ -4,7 +4,7 @@
   "description": "Backend service for audio fingerprinting",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx nodemon src/server"
   },
   "keywords": [
     "Backend",
@@ -12,5 +12,8 @@
     "JavaScript"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
