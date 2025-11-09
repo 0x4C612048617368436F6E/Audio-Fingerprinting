@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Arrays;
+import java.util.concurrent.BlockingQueue;
 
 public class AudioRecorder extends Thread {
 
@@ -26,6 +27,7 @@ public class AudioRecorder extends Thread {
     private boolean recording = true;
     private short[] audioBuffer;
     private long shortRead = 0;
+    private BlockingQueue<Short[]> data;
     File pcmFile;
 
     public AudioRecorder(TapToShazamButtonPressed instance) {

@@ -4,4 +4,4 @@ const corsOption = {
   origin: (origin, callback) => {},
 };
 
-module.exports = { corsOption };
+module.exports = corsOption;
