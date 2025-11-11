@@ -6,8 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddToDatabase"
+    android:background="@drawable/bg_gradient"
     android:orientation="vertical"
     >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_exit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="80dp"
+        />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textview1"
             android:layout_width="wrap_content"
@@ -21,17 +33,25 @@
             android:layout_marginBottom="50dp" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/youtubeURL"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:hint="@string/youtube_url"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/addToDatabase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_to_database"
+        android:text="@string/add"
         android:textSize="20sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_gravity="center"
+        android:gravity="center"
         />
 </LinearLayout>

@@ -33,6 +33,7 @@ android {
 
 dependencies {
     api("com.google.android.material:material:1.1.0-alpha06")
+    api("com.squareup.okhttp3:okhttp:4.12.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

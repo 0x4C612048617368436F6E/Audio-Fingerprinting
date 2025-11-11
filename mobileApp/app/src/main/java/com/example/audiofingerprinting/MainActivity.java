@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 //do some stuff
                 Log.d("Test","Add to database");
+                switchToAddToDatabaseActivity();
             }
         });
 
@@ -84,6 +85,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void switchToTapToShazamButtonPressedActivity(){
         Intent switchActivity = (Intent) new Intent(MainActivity.this, TapToShazamButtonPressed.class);
+        //will pass in data
+        startActivity(switchActivity);
+    }
+
+    public void switchToAddToDatabaseActivity(){
+        Intent switchActivity = (Intent) new Intent(MainActivity.this, AddToDatabase.class);
         //will pass in data
         startActivity(switchActivity);
     }
